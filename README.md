@@ -4,6 +4,12 @@
 
 Aplicación web estática interactiva para aprender y practicar los silabarios japoneses Hiragana y Katakana. Una herramienta educativa con un diseño visual atractivo que facilita el aprendizaje de los caracteres japoneses.
 
+## 📸 Captura de Pantalla
+
+![Captura de la aplicación](Captura.PNG)
+
+*Interfaz principal mostrando los silabarios Hiragana y Katakana con controles interactivos*
+
 ## 📋 Descripción
 
 Esta aplicación web proporciona una interfaz visual e interactiva para estudiar los dos silabarios principales del idioma japonés:
@@ -17,10 +23,15 @@ Cada carácter se muestra junto con su transliteración (romaji) para facilitar 
 
 - ✅ Visualización completa de los silabarios Hiragana y Katakana
 - ✅ Transliteración (romaji) para cada carácter
-- ✅ Diseño visual atractivo con colores distintivos
+- ✅ **Modo Práctica**: Oculta caracteres para practicar y memorizar
+- ✅ **Búsqueda en tiempo real**: Busca por carácter o romaji
+- ✅ **Filtros**: Muestra solo Hiragana, solo Katakana o ambos
+- ✅ **Organización por filas**: Caracteres agrupados por sonidos (a-i-u-e-o, ka-ki-ku-ke-ko, etc.)
+- ✅ Diseño visual atractivo con colores distintivos y degradado de fondo
 - ✅ Información educativa sobre los sistemas de escritura japonesa
 - ✅ Interfaz responsive y fácil de usar
 - ✅ Fuentes personalizadas para una mejor visualización
+- ✅ Accesibilidad mejorada con navegación por teclado
 
 ## 📁 Estructura del Proyecto
 
@@ -28,17 +39,19 @@ Cada carácter se muestra junto con su transliteración (romaji) para facilitar 
 japanese-keys/
 ├── index.html          # Página principal con los silabarios
 ├── stylesheet.css      # Estilos personalizados
+├── app.js             # Lógica de la aplicación y datos embebidos
 ├── README.md          # Este archivo
 ├── Cabecera.png       # Imagen de cabecera
-├── fonts/             # Fuentes personalizadas (Hiragana)
-├── fonts2/            # Fuentes personalizadas (Katakana)
-└── *.zip              # Archivos de fuentes comprimidos
+└── fonts/             # Fuentes personalizadas
+    ├── japonesa-webfont.woff
+    └── japonesa-webfont.woff2
 ```
 
 ## 🛠️ Tecnologías Utilizadas
 
-- **HTML5**: Estructura de la aplicación
-- **CSS3**: Estilos y diseño visual
+- **HTML5**: Estructura semántica moderna de la aplicación
+- **CSS3**: Estilos modernos con Grid, Flexbox y variables CSS
+- **JavaScript (ES6+)**: Interactividad y generación dinámica de contenido
 - **Fuentes personalizadas**: Para una mejor visualización de caracteres japoneses
 
 ## 📚 Sistemas de Escritura Japonesa
@@ -85,8 +98,10 @@ Luego abre `http://localhost:8000` en tu navegador.
 - **Colores distintivos**: 
   - Hiragana: Rosa/Hotpink (#ff69b4)
   - Katakana: Magenta oscuro (#c80087)
-- **Efectos de texto**: Sombras y relieves para mejor legibilidad
-- **Diseño responsive**: Adaptable a diferentes tamaños de pantalla
+- **Fondo degradado**: Degradado suave de azul claro a rosa/púrpura
+- **Efectos de texto**: Sombras y relieves 3D para mejor legibilidad
+- **Diseño responsive**: Adaptable a diferentes tamaños de pantalla (mobile-first)
+- **Efecto Bento**: Caracteres organizados en filas que llenan todo el ancho disponible
 
 ## 📖 Contenido Educativo
 
@@ -102,6 +117,51 @@ Puedes personalizar la aplicación modificando:
 - `stylesheet.css`: Colores, fuentes y estilos
 - `index.html`: Contenido y estructura
 - Agregar más funcionalidades como ejercicios interactivos
+
+## 📝 Changelog
+
+### Update 2025
+
+#### 🎉 Mejoras Principales
+
+- **Refactorización completa del código**
+  - Separación de CSS del HTML (archivo externo `stylesheet.css`)
+  - Implementación de JavaScript modular (`app.js`)
+  - Datos embebidos en JavaScript (sin necesidad de servidor)
+
+- **Nuevas funcionalidades interactivas**
+  - ✨ **Modo Práctica**: Oculta caracteres japoneses y romaji para practicar memorización
+  - 🔍 **Búsqueda en tiempo real**: Busca caracteres por su forma o pronunciación (romaji)
+  - 🎯 **Filtros**: Muestra solo Hiragana, solo Katakana o ambos silabarios
+  - 👁️ **Toggle Romaji**: Muestra u oculta la transliteración
+
+- **Mejoras de diseño y UX**
+  - 🎨 Fondo degradado moderno (azul claro a rosa/púrpura)
+  - 📐 Organización por filas de sonidos (efecto Bento)
+  - 🎯 Mejor contraste en títulos y caracteres
+  - 📱 Diseño responsive mejorado con CSS Grid y Flexbox
+  - ✨ Animaciones suaves en modo práctica
+
+- **Mejoras técnicas**
+  - ♿ Accesibilidad mejorada (aria-labels, navegación por teclado)
+  - 🏗️ Estructura HTML5 semántica moderna
+  - 📦 Meta tags SEO y Open Graph
+  - 🧹 Limpieza de archivos no utilizados
+  - 🎨 Variables CSS para fácil personalización
+
+- **Correcciones**
+  - 🐛 Corregido carácter incorrecto en Hiragana (ほ para "ho")
+  - 🐛 Corregido contraste en modo práctica
+  - 🐛 Mejorado contraste de títulos Katakana
+
+#### 📊 Estadísticas
+
+- **Archivos nuevos**: 1 (`app.js`)
+- **Archivos modificados**: 2 (`index.html`, `stylesheet.css`)
+- **Archivos eliminados**: 6 (archivos no utilizados)
+- **Líneas de código**: ~500+ líneas de JavaScript añadidas
+
+---
 
 ## 📝 Notas
 
