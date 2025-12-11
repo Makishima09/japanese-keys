@@ -1,3 +1,5 @@
+![Japonés Time](Cabecera.png)
+
 # Japanese Alphabet - Hiragana & Katakana
 
 Aplicación web estática interactiva para aprender y practicar los silabarios japoneses Hiragana y Katakana. Una herramienta educativa con un diseño visual atractivo que facilita el aprendizaje de los caracteres japoneses.
@@ -137,4 +139,3 @@ Este proyecto es de código abierto y está disponible para uso educativo y de a
 ありがとうございました！ (¡Gracias!)
 
 ⭐ Si este proyecto te resulta útil, ¡no olvides darle una estrella!
-
